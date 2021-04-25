@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 // Raiti Project
 // 제작자 : asdarwin03
+// 과제 제출용이였기 때문에, 꼼꼼하게 주석을 달았습니다. 
 
 
 
@@ -101,7 +102,7 @@ int _count = 0;
 
 
 
-#define PLAYER_BULLET_MAX 30               // 플레이어의 총알 갯수 제한
+#define PLAYER_BULLET_MAX 5               // 플레이어의 총알 갯수 제한
 #define PLAYER_BULLET_DELAY 7               // 총알을 쏠 때의 시간 간격. 10 - 0.1초기본 : 7 
 #define SHOOTING_BULLET_SPEED 2                //2~10 사이에서 설정하는것을 추천. 1로 설정 시 끊김 현상 발생(너무 빨리 총알이 날아가서)
 
@@ -1768,8 +1769,6 @@ int main()
 
 
 		Me.model[0][0] = SHOTBLOCK;
-		Me.model[1][0] = BLOCK;
-		Me.model[2][0] = R_SHOTBLOCK;
 
 
 
